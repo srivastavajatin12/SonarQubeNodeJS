@@ -8,9 +8,10 @@
      #command: git clone https://github.com/Thirupathichalla-arch/SonarQubeNodeJS.git ~/SonarQubeNodeJS
 
    - name: npm installation
-     command: npm install
+     
      args:
        chdir: ~/SonarQubeNodeJS
+     command: npm install
 
    - name: execute npm
      command: forever start SonarQubeNodeJS/app/views/index.html
