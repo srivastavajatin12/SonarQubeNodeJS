@@ -13,7 +13,7 @@
 
        chdir: ~/SonarQubeNodeJS
 
-   - name: start nodejs app
+   - name: execute npm
 
      command: forever start /root/SonarQubeNodeJS/app/server.js
      
