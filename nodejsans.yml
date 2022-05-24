@@ -15,4 +15,4 @@
 
    - name: start nodejs app
 
-     command: forever start /root/SonarQubeNodeJS/app/server.js
+     command: forever start /SonarQubeNodeJS/app/server.js
