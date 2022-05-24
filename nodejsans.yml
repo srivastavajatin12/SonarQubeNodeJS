@@ -1,0 +1,18 @@
+- hosts: webservers
+  tasks:
+
+   - name: Install forever
+
+     npm: name=forever global=yes state=present
+
+   - name: installing npm
+
+     command: npm install
+
+     args:
+
+       chdir: ~/SonarQubeNodeJS
+
+   - name: start nodejs app
+
+     command: forever start /root/SonarQubeNodeJS/app/server.js
