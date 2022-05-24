@@ -8,5 +8,10 @@
      
      command: npm install
 
-   - name: start nodejs
-     command: forever start /root/SonarQubeNodeJS/app/views/index.html
+  ## - name: start nodejs
+    ## command: forever start /root/SonarQubeNodeJS/app/views/index.html
+   - name: deploy execute
+     copy:
+       src: app/views/index.html
+       dest: /tmp
+       workdir: /tmp
