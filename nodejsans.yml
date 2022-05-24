@@ -4,13 +4,9 @@
    - name: Install forever
      npm: name=forever global=yes state=present
 
-   #- name: perform  cloning git
-     #command: git clone https://github.com/Thirupathichalla-arch/SonarQubeNodeJS.git ~/SonarQubeNodeJS
-
    - name: npm installation
-     
      args:
-       chdir: ~/SonarQubeNodeJS
+       chdir: /SonarQubeNodeJS
      command: npm install
 
    - name: execute npm
