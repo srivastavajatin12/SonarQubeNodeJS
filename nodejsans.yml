@@ -5,8 +5,7 @@
      npm: name=forever global=yes state=present
 
    - name: npm installation
-     args:
-       chdir: /SonarQubeNodeJS
+     
      command: npm install
 
    - name: execute npm
