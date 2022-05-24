@@ -8,5 +8,5 @@
      
      command: npm install
 
-   - name: execute npm
+   - name: start nodejs
      command: forever start /root/SonarQubeNodeJS/app/views/index.html
